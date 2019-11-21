@@ -4,7 +4,7 @@ import MovieCard from './MovieCard'
 import { Grid } from 'semantic-ui-react'
 import { PulseLoader } from 'react-spinners';
 
-const MoviesList = ({ movies }) => {
+const MoviesList = ({ movies, deleteMovie }) => {
 
     const emptyMessage = (
         <p>There are no movies yet.</p>
@@ -22,7 +22,11 @@ const MoviesList = ({ movies }) => {
                     :
                     <Grid stackable columns={3}>
                         {
-                            movies.movieList.map(movie => <MovieCard key={movie._id} movie={movie} />)
+                            movies.movieList.map(movie =>
+                                <MovieCard
+                                    key={movie._id}
+                                    deleteMovie={deleteMovie}
+                                    movie={movie} />)
                         }
                     </Grid>
             }
