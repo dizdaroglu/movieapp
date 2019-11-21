@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -19,4 +17,12 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.clearfix{
+  clear: both;
+  margin-bottom: 10px;
+}
+.inlineError{
+  color:#f44336
 }
