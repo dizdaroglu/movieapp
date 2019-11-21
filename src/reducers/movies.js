@@ -5,7 +5,7 @@ import {
 } from '../actions/movies'
 
 const initialState = {
-    movies: [],
+    movieList: [],
     fetching: false,
     error: {}
 }
@@ -20,7 +20,7 @@ export default (state = initialState, action) => {
         case FETCH_MOVIES_FULFILLED:
             return {
                 ...state,
-                movies: action.payload,
+                movieList: action.payload,
                 fetching: false
             }
         case FETCH_MOVIES_REJECTED:

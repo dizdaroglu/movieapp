@@ -6,6 +6,12 @@ export const FETCH_MOVIES_FULFILLED = "FETCH_MOVIES_FULFILLED"
 export const FETCH_MOVIES_REJECTED = "FETCH_MOVIES_REJECTED"
 
 
+export const DELETE_MOVIES_PENDING = "DELETE_MOVIES_PENDING"
+export const DELETE_MOVIES_FULFILLED = "DELETE_MOVIES_FULFILLED"
+export const DELETE_MOVIES_REJECTED = "DELETE_MOVIES_REJECTED"
+
+
+
 export function fetchMovies() {
     return dispatch => {
         dispatch({
